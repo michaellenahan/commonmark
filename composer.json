@@ -10,5 +10,8 @@
     "issues": "https://www.drupal.org/project/issues/commonmark",
     "source": "http://cgit.drupalcode.org/commonmark"
   },
-  "require": { }
+  "require": {
+    "league/commonmark": "~0.10.0",
+    "php": ">=5.4.8"
+  }
 }
