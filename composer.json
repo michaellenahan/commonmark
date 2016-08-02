@@ -1,7 +1,7 @@
 {
   "name": "drupal/commonmark",
   "type": "drupal-module",
-  "description": "Converts Markdown to HTML based on the CommonMark spec via thephpleague/commonmark PHP library, created and maintained by The League of Extraordinary Packages.",
+  "description": "Converts Markdown to HTML based on the CommonMark spec via thephpleague/commonmark PHP library.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://www.drupal.org/project/commonmark",

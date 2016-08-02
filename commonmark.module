@@ -16,7 +16,7 @@ function commonmark_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.commonmark':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Converts Markdown to HTML based on the CommonMark spec via thephpleague/commonmark PHP library, created and maintained by The League of Extraordinary Packages.') . '</p>';
+      $output .= '<p>' . t('Converts Markdown to HTML based on the CommonMark spec via thephpleague/commonmark PHP library.') . '</p>';
       return $output;
 
     default:
