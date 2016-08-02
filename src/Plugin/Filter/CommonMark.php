@@ -54,7 +54,7 @@ class CommonMark extends FilterBase {
    * {@inheritdoc}
    */
   public function process($text, $langcode) {
-    $converter = new CommonMarkConverter();
+    $converter = new CommonMarkConverter(['html_input' => 'escape']);
     $processed_text = $converter->convertToHtml($text);
     return new FilterProcessResult($processed_text);
   }
