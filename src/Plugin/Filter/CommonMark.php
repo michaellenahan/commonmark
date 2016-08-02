@@ -4,6 +4,7 @@ namespace Drupal\commonmark\Plugin\Filter;
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\filter\Plugin\FilterBase;
+use Drupal\filter\FilterProcessResult;
 
 /**
  * Provides a filter to process CommonMark Markdown to HTML.
@@ -52,6 +53,8 @@ class CommonMark extends FilterBase {
    * {@inheritdoc}
    */
   public function process($text, $langcode) {
-    // TODO: Implement process() method.
+    $converter = new \League\CommonMark\CommonMarkConverter();
+    $processed_text = $converter->convertToHtml($text);
+    return new FilterProcessResult($processed_text);
   }
 }
