@@ -62,8 +62,11 @@ Go to `admin/config/content/formats` and click `Add text format`.
 Fill out the form as follows:
 
 `Name`: `CommonMark`
+
 `Roles`: `Administrator`, `Authenticated user`
+
 `Text editor`: `None`
+
 `Enabled filters`: `CommonMark`
 
 ... and click `Save configuration`.
